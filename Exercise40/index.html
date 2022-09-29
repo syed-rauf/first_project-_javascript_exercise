@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:40</title>
+  </head>
+  <body>
+    <script>
+      //    Great Magicians: Start with a copy of your program from Exercise 39.
+      //    Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name.
+      //     Call show_magicians() to see that the list has actually been modified.
+
+      const magicians = ["harry potter", "harmaine", "phillips", "goga"];
+
+      function show_magicians(magiciansArr) {
+        magiciansArr.forEach((magician) => {
+          console.log(magician);
+        });
+      }
+
+      function make_great(magiciansArr) {
+        magiciansArr.map((magician, index) => {
+          magiciansArr[index] = `The Great ${magician}`;
+        });
+      }
+
+      // before update
+      show_magicians(magicians);
+
+      // modifies the array of magicians by adding the phrase the Great to each magician’s name.
+      make_great(magicians);
+
+      // after update
+      show_magicians(magicians);
+    </script>
+  </body>
+</html>

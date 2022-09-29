@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:13</title>
+  </head>
+  <body>
+    <script>
+      //   Changing Guest List: You just heard that one of your guests can’t make the dinner,
+      //   so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
+
+      let guestList = ["usama", "zaair", "kamran"];
+      let inviteMsg = "I am invitaing you for dinner tonight";
+
+      let list = guestList.map((name) => {
+        return `<li>${name}! ${inviteMsg}</li>`;
+      });
+
+      document.write(`<ul> ${list} </ul>`);
+      document.write(`${guestList[1]} is not coming, I am going to invite someone else`);
+
+      let removeGuestIndex = guestList.indexOf("zaair");
+      let addNewGuest = "Hunain";
+
+      guestList.splice(removeGuestIndex, 1, addNewGuest);
+
+      let updatedList = guestList.map((name) => {
+        return `<li>${name}! ${inviteMsg}</li>`;
+      });
+
+      document.write(`<ul> ${updatedList} </ul>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:21</title>
+  </head>
+  <body>
+    <script>
+      //   Conditional Tests: Write a series of conditional tests.
+      // Print a statement describing each test and your prediction for the results of each test.
+      // Your code should look something like this:
+
+      // let car = 'subaru';
+
+      // console.log("Is car == 'subaru'? I predict True.")
+
+      // console.log(car == 'subaru')
+
+      // • Look closely at your results, and make sure you understand why each line evaluates to True or False.
+
+      // • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+
+      let name = "rauf";
+      let age = 26;
+      let gender = "male";
+
+      console.log("Test#1 : undefined shoud be false because its falsy value");
+      if (undefined) {
+        console.log("it's not going to print");
+      }
+
+      console.log("Test#2 : null shoud be false because its falsy value");
+      if (null) {
+        console.log("it's not going to print");
+      }
+
+      console.log("Test#3 : empty string shoud be false because its falsy value");
+      if ("") {
+        console.log("it's not going to print");
+      }
+
+      console.log("Test#4 : false shoud be false because its falsy value");
+      if (false) {
+        console.log("it's not going to print");
+      }
+
+      console.log("Test#5 : age should be greater than 30, it will evalute to false ");
+      if (age > 30) {
+        console.log("it's not going to print");
+      }
+
+      console.log("Test#6 :  age should be greater than 18, it will evalute to true");
+      if (age > 18) {
+        console.log("true, age is greater than 18 ");
+      }
+
+      console.log("Test#7 :  name should not be empty string, it will evalute to true");
+      if (name != "") {
+        console.log("true, name is not empty string");
+      }
+
+      console.log("Test#8 :  name should have more than 3 characters, it will evalute to true");
+      if (name.length > 3) {
+        console.log("true, name has more than 3 characters");
+      }
+
+      console.log("Test#9 :  age should be less than 30, it will evalute to true");
+      if (age < 30) {
+        console.log("true, age is less than 30");
+      }
+
+      console.log("Test#10 :  gender should be equal to male, it will evalute to true");
+      if (gender === "male") {
+        console.log("true, he is male");
+      }
+    </script>
+  </body>
+</html>

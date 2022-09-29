@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:11</title>
+  </head>
+  <body>
+    <script>
+      // Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car,
+      //  and make a list that stores several examples. Use your list to print a series of statements about these items,
+      //  such as “I would like to own a Honda motorcycle.”
+
+      let bike = [
+        "Disk Brakes with Dual Channel ABS.",
+        "The latest fuel injection bikes come with better-ventilated pads and brakes",
+        "Engines With Liquid Cooling",
+        "Performance Tyres.",
+      ];
+
+      let list = bike.map((statement) => {
+        return `<li>${statement}</li>`;
+      });
+
+      document.write(`<ul> ${list} </ul>`);
+    </script>
+  </body>
+</html>

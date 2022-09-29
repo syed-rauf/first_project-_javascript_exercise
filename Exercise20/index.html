@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:20</title>
+  </head>
+  <body>
+    <script>
+      //   Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error.
+      //   Make sure you correct the error before closing the program.
+
+      let guestList = ["usama", "zaair", "kamran"];
+
+      /* Intentional Error*/
+
+      // let lastIndex = guestList.length;
+      // expected result kamran
+      // console.log(guestList[lastIndex]);
+      // result is undefined because array index start from 0 index
+
+      let lastIndex = guestList.length - 1;
+
+      console.log(guestList[lastIndex]);
+    </script>
+  </body>
+</html>

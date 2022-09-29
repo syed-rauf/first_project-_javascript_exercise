@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:18</title>
+  </head>
+  <body>
+    <script>
+      //  Think of something you could store in a array.
+      //  For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like.
+      //  Write a program that creates a list containing these items.
+
+      let languages = ["english", "french", "urdu", "hindi", "persian"];
+
+      let list = languages.map((name) => {
+        return `<li>${name}</li>`;
+      });
+
+      let joinArr = list.join(" ");
+
+      document.write(`List of Languages <br/>`);
+
+      document.write(`<ul> ${joinArr} </ul> <br/>`);
+
+      // List of Countries
+
+      let countries = ["Pakistan", "Iran", "America", "Canada", "China"];
+
+      let countriesList = countries.map((name) => {
+        return `<li>${name}</li>`;
+      });
+
+      document.write(`<br /> List of Countries  <br/>`);
+
+      document.write(`<ul> ${countriesList.join(" ")} </ul> <br/>`);
+    </script>
+  </body>
+</html>

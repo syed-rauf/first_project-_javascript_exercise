@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:17</title>
+  </head>
+  <body>
+    <script>
+      //  Dinner Guests: Working with one of the programs from Exercises 14 through 18,
+      // print a message indicating the number of people you are inviting to dinner.
+
+      let guestList = ["usama", "zaair", "kamran"];
+      let inviteMsg = "I am invitaing you for dinner tonight";
+
+      let list = guestList.map((name) => {
+        return `<li>${name}! ${inviteMsg}</li>`;
+      });
+
+      document.write(`<ul> ${list} <ul/> <br/>`);
+
+      // number of people you are inviting to dinner.
+
+      document.write(`<p>  I am inviting ${guestList.length} people to dinner. </p>`);
+
+      document.write(`${guestList[1]} is not coming, I am going to invite someone else`);
+
+      let removeGuestIndex = guestList.indexOf("zaair");
+      let addNewGuest = "Hunain";
+
+      guestList.splice(removeGuestIndex, 1, addNewGuest);
+
+      let updatedList = guestList.map((name) => {
+        return `<li>${name}! ${inviteMsg}</li>`;
+      });
+
+      document.write(`<ul> ${updatedList} </ul>`);
+
+      // number of people you are inviting to dinner.
+
+      document.write(`<p>  I am inviting ${guestList.length} people to dinner. </p>`);
+
+      document.write("hello guys! I want to inform you that I found a bigger dinner table.");
+
+      // • Add one new guest to the beginning of your array.
+
+      let newGuest = "kamil";
+
+      guestList.unshift(newGuest);
+
+      //  Add one new guest to the middle of your array.
+
+      let newGuestMid = "ahmed";
+      let midOfTheArr = Math.round(guestList.length / 2);
+
+      guestList.splice(midOfTheArr, 0, newGuestMid);
+
+      //  Use append() to add one new guest to the end of your list.
+
+      let newGuestEnd = "saif";
+
+      guestList.push(newGuestEnd);
+
+      //  Print a new set of invitation messages, one for each person in your list.
+
+      let updatedList1 = guestList.map((name) => {
+        return `<li>${name}! ${inviteMsg}</li>`;
+      });
+
+      document.write(`<ul> ${updatedList1} </ul>`);
+
+      // number of people you are inviting to dinner.
+
+      document.write(`<p>  I am inviting ${guestList.length} people to dinner. </p>`);
+
+      // Add a new line that prints a message saying that you can invite only two people for dinner.
+
+      document.write(
+        "New dinner table won’t arrive in time for the dinner,So i can invite only two people for dinner. </br>"
+      );
+
+      // Remove guests from your list one at a time until only two names remain in your list.
+      //  Print a message to each of the two people still on your list, letting them know they’re still invited.
+
+      while (2 < guestList.length) {
+        if (guestList.length > 2) {
+          let removeGuest = guestList.pop();
+          document.write(`sorry ${removeGuest}! I can't invite you. <br/>`);
+        }
+      }
+
+      // number of people you are inviting to dinner.
+      document.write(`<p>  I am inviting ${guestList.length} people to dinner. </p>`);
+
+      while (0 < guestList.length) {
+        let removeGuest = guestList.pop();
+        document.write(`${removeGuest}! your are still invited. <br/>`);
+      }
+    </script>
+  </body>
+</html>

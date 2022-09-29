@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:14</title>
+  </head>
+  <body>
+    <script>
+      //  More Guests: You just found a bigger dinner table, so now more space is available.
+      //  Think of three more guests to invite to dinner.
+
+      // • Start with your program from Exercise 15.
+      //   Add a print statement to the end of your program informing people that you found a bigger dinner table.
+
+      // • Add one new guest to the beginning of your array.
+
+      // • Add one new guest to the middle of your array.
+      // • Use append() to add one new guest to the end of your list.
+      // • Print a new set of invitation messages, one for each person in your list.
+
+      let guestList = ["usama", "zaair", "kamran"];
+      let inviteMsg = "I am invitaing you for dinner tonight";
+
+      let list = guestList.map((name) => {
+        return `<li>${name}! ${inviteMsg}</li>`;
+      });
+
+      document.write(`<ul> ${list} </ul>`);
+      document.write(`${guestList[1]} is not coming, I am going to invite someone else`);
+
+      let removeGuestIndex = guestList.indexOf("zaair");
+      let addNewGuest = "Hunain";
+
+      guestList.splice(removeGuestIndex, 1, addNewGuest);
+
+      let updatedList = guestList.map((name) => {
+        return `<li>${name}! ${inviteMsg}</li>`;
+      });
+
+      document.write(`<ul> ${updatedList} </ul>`);
+
+      document.write("hello guys! I want to inform you that I found a bigger dinner table.");
+
+      // • Add one new guest to the beginning of your array.
+
+      let newGuest = "kamil";
+
+      guestList.unshift(newGuest);
+
+      //  Add one new guest to the middle of your array.
+
+      let newGuestMid = "ahmed";
+      let midOfTheArr = Math.round(guestList.length / 2);
+
+      guestList.splice(midOfTheArr, 0, newGuestMid);
+
+      //  Use append() to add one new guest to the end of your list.
+
+      let newGuestEnd = "saif";
+
+      guestList.push(newGuestEnd);
+
+      //  Print a new set of invitation messages, one for each person in your list.
+
+      let updatedList1 = guestList.map((name) => {
+        return `<li>${name}! ${inviteMsg}</li>`;
+      });
+
+      document.write(`<ul> ${updatedList1} </ul>`);
+    </script>
+  </body>
+</html>

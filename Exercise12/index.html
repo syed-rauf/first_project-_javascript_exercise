@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:12</title>
+  </head>
+  <body>
+    <script>
+      //  Guest List: If you could invite anyone, living or deceased, to dinner,
+      //  who would you invite? Make a list that includes at least three people you’d like to invite to dinner.
+      //  Then use your list to print a message to each person, inviting them to dinner.
+
+      let guestList = ["usama", "zaair", "kamran"];
+      let inviteMsg = "I am invitaing you for dinner tonight";
+
+      let list = guestList.map((name) => {
+        return `<li>${name}! ${inviteMsg}</li>`;
+      });
+
+      document.write(`<ul> ${list} </ul>`);
+    </script>
+  </body>
+</html>

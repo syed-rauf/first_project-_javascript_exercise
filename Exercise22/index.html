@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise:22</title>
+  </head>
+  <body>
+    <script>
+      //   More Conditional Tests: You don’t have to limit the number of tests you create to 10.
+      //   If you want to try more comparisons, write more tests.
+      //   Have at least one True and one False result for each of the following:
+      // • Tests for equality and inequality with strings
+
+      // • Tests using the lower case function
+
+      // • Numerical tests involving equality and inequality, greater than and less than,
+      //   greater than or equal to, and less than or equal to
+
+      // • Tests using "and" and "or" operators
+
+      // • Test whether an item is in a array
+
+      // • Test whether an item is not in a array
+
+      let name = "rauf";
+      let age = 26;
+      let gender = "MALE";
+      let strArr = ["english", "french", "urdu", "hindi", "persian"];
+      let numArr = [23, 54, 1, 9, 78, 3];
+
+      console.log("Test# 1 :  gender should be equal to male, it will evalute to true");
+      if (gender === "MALE") {
+        console.log("true, he is male");
+      }
+
+      console.log("Test# 2 :  gender should not be equal to male, it will evalute to false");
+      if (gender !== "MALE") {
+        console.log("false, he is male");
+      }
+
+      console.log("Test# 3 :  gender should be equal to male, it will evalute to true");
+      if (gender.toLowerCase() === "male") {
+        console.log("true, he is male");
+      }
+
+      console.log("Test# 4 :  gender should not be equal to male, it will evalute to false");
+      if (gender.toLowerCase() !== "male") {
+        console.log("false, he is male");
+      }
+
+      console.log("Test#5 : age should be less than 30, it will evalute to true ");
+      if (age < 30) {
+        console.log("age is less than 30");
+      }
+
+      console.log("Test#6 :  age should be greater than 18, it will evalute to true");
+      if (age > 18) {
+        console.log("true, age is greater than 18 ");
+      }
+
+      console.log("Test#7 :  name should not be empty string, it will evalute to true");
+      if (name != "") {
+        console.log("true, name is not empty string");
+      }
+
+      console.log("Test#8 :  name should have more than 3 characters, it will evalute to true");
+      if (name.length >= 3) {
+        console.log("true, name has more than 3 characters");
+      }
+
+      console.log("Test#8 : age should not be equal to 26, it will evalute to false ");
+      if (age !== 26) {
+        console.log("false, it's not going to print");
+      }
+
+      console.log("Test#9 : age should be equal to 26, it will evalute to true");
+      if (age === 26) {
+        console.log("true, age is 26");
+      }
+
+      console.log(
+        "Test#10 : age should be less or equal to 30 and greater than or equal to 18, it will evalute to true "
+      );
+      if (age >= 18 && age <= 30) {
+        console.log("true, under range");
+      }
+
+      console.log("Test#11 : age should be greater than or equal to 18, it will evalute to true ");
+      if (age >= 18 && name.length > 3) {
+        console.log("true, name and age are in range");
+      }
+
+      console.log("Test#12 : gender should be equal to male or female, it will evalute to true ");
+      if (gender === "MALE" || gender === "FEMALE") {
+        console.log("true, under range");
+      }
+
+      console.log("Test#13 : is string urdu in the array, it will evalute to true ");
+      if (strArr.includes("urdu")) {
+        console.log("true, urdu is in the array");
+      }
+
+      console.log("Test#13 : is string arabic in the array, it will evalute to false ");
+      if (strArr.includes("arabic")) {
+        console.log("false, arabic is in the array");
+      }
+
+      console.log("Test#14 : is number 9 in the array, it will evalute to true ");
+      if (numArr.includes(9)) {
+        console.log("true, number 9 is in the array");
+      }
+
+      console.log("Test#15 : is number 15 in the array, it will evalute to false");
+      if (numArr.includes(15)) {
+        console.log("false, number 15 is not in the array");
+      }
+    </script>
+  </body>
+</html>
